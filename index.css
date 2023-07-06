@@ -30,7 +30,7 @@ body
    padding: 0 15px 0 15px;
    margin-right: auto;
    margin-left: auto;
-   max-width: 3500px;
+   max-width: 4000px;
 }
 #LayoutGrid1 > .row
 {
@@ -83,7 +83,10 @@ body
 #wb_PageHeader
 {
    clear: both;
-   position: relative;
+   position: fixed;
+   left: 0;
+   top: 0;
+   z-index: 7777;
    table-layout: fixed;
    display: table;
    text-align: center;
@@ -361,7 +364,7 @@ body
    display: block;
    width: 100%;
    height: auto;
-   max-width: 3500px;
+   max-width: 4000px;
    margin-left: auto;
    margin-right: auto;
    vertical-align: top;
@@ -403,7 +406,7 @@ body
    display: block;
    width: 100%;
    height: auto;
-   max-width: 3500px;
+   max-width: 4000px;
    margin-left: auto;
    margin-right: auto;
    vertical-align: top;
@@ -426,7 +429,7 @@ body
    display: block;
    width: 100%;
    height: auto;
-   max-width: 3500px;
+   max-width: 4000px;
    margin-left: auto;
    margin-right: auto;
    vertical-align: top;
@@ -435,156 +438,6 @@ body
 {
    position: relative;
 }
-#Blog3
-{
-   background-color: #FFFFFF;
-   background-image: none;
-   border: 0px solid #2E8B57;
-   border-radius: 2px;
-   font-family: Arial;
-   font-weight: normal;
-   font-size: 13px;
-   margin: 0;
-   text-align: left;
-   line-height: 1.2;
-   display: inline-block;
-   position: relative;
-   width: 100%;
-}
-#Blog3 .blogitem
-{
-   background-color: #FFFFFF;
-   margin-bottom: 0px;
-   padding: 8px;
-   text-align: left;
-}
-#Blog3 .blogdate
-{
-   font-family: "Times New Roman";
-   font-weight: bold;
-   font-size: 13px;
-   color: #A9A9A9;
-   font-style: normal;
-   text-decoration: none;
-}
-#Blog3 .blogsubject
-{
-   font-family: Arial;
-   font-weight: bold;
-   font-size: 13px;
-   color: #4F4F4F;
-   font-style: normal;
-   text-decoration: none;
-}
-#Blog3 .blogcomments
-{
-   font-family: Arial;
-   font-weight: normal;
-   font-size: 13px;
-   color: #6C757D;
-   font-style: normal;
-   text-decoration: underline;
-}
-#Blog3 .blogsubject a:link, #Blog3 .blogsubject a:visited, #Blog3 .blogsubject a:hover
-{
-   color: inherit;
-   text-decoration: inherit;
-}
-#Blog3 .blogcomments a:link, #Blog3 .blogcomments a:visited, #Blog3 .blogcomments a:hover
-{
-   color: inherit;
-   text-decoration: inherit;
-}
-#Blog3 .blogcomments
-{
-   text-decoration: none;
-}
-#Blog3 .no-thumb
-{
-   display: none;
-}
-#Blog3 .blogquote
-{
-   display: -ms-flexbox;
-   display: flex;
-}
-#Blog3 .blogcontent
-{
-   font-family: Arial;
-   font-size: 13px;
-   color: #6C757D;
-}
-#Blog3 .bloguser 
-{
-   -ms-flex: 0 1 auto;
-   flex: 0 1 auto;
-   padding-bottom: 10px;
-}
-#Blog3 .blogthumb
-{
-   display: -ms-flexbox;
-   display: flex;
-   -ms-flex-pack: center;
-   justify-content: center;
-   -ms-flex-align: center;
-   align-items: center;
-   width: 80px;
-   height: 80px;
-   line-height: 0;
-   margin: 0px 0px 0px 0px;
-}
-#Blog3 .bloginfo
-{
-   -ms-flex: 1 1 0%;
-   flex: 1 1 0%;
-   position: relative;
-   padding: 15px;
-   background-color: #FFFFFF;
-   border: 1px solid #A9A9A9;
-   border-radius: 4px;
-}
-#Blog3 .bloginfo::after, #Blog3 .bloginfo::before 
-{
-   right: 100%;
-   top: 35px;
-   border: solid transparent;
-   content: " ";
-   height: 0px;
-   width: 0px;
-   position: absolute;
-   pointer-events: none;
-}
-#Blog3 .bloginfo::after 
-{
-   border-color: transparent;
-   border-right-color: #FFFFFF;
-   border-width: 8px;
-   margin-top: -8px;
-}
-#Blog3 .bloginfo::before 
-{
-   border-color: transparent;
-   border-right-color: #A9A9A9;
-   border-width: 9px;
-   margin-top: -9px;
-}
-#Blog3 .blogdate 
-{
-   margin-top: 5px;
-   color: #A9A9A9;
-   font-size: 13px;
-   text-transform: uppercase;
-   letter-spacing: 1px;
-}
-#Blog3 .blogsubject
-{
-   color: #4F4F4F;
-   font-size: 13px;
-   font-weight: 700;
-   line-height: 1;
-   text-align: center;
-}
-
 #wb_LayoutGrid9
 {
    clear: both;
@@ -606,7 +459,7 @@ body
    padding: 25px 15px 25px 15px;
    margin-right: auto;
    margin-left: auto;
-   max-width: 3500px;
+   max-width: 4000px;
 }
 #LayoutGrid9 > .row
 {
@@ -864,12 +717,12 @@ body
 {
    outline: 0;
 }
-#wb_ImageHotspots4
+#wb_ImageHotspots5
 {
    margin: 0;
    vertical-align: top;
 }
-#ImageHotspots4
+#ImageHotspots5
 {
    border: 0px solid #000000;
    border-radius: 0px;
@@ -878,33 +731,14 @@ body
    display: block;
    width: 100%;
    height: auto;
-   max-width: 3500px;
+   max-width: 758px;
    margin-left: auto;
    margin-right: auto;
    vertical-align: top;
 }
-#wb_ImageHotspots4
+#wb_ImageHotspots5
 {
    position: relative;
-}
-#wb_Picture3
-{
-   margin: 0;
-   vertical-align: top;
-}
-#Picture3
-{
-   border: 0px solid #000000;
-   border-radius: 0px;
-   box-sizing: border-box;
-   padding: 0;
-   display: block;
-   width: 100%;
-   height: auto;
-   max-width: 850px;
-   margin-left: auto;
-   margin-right: auto;
-   vertical-align: top;
 }
 #wb_PanelMenu1
 {
@@ -920,13 +754,6 @@ body
    height: auto;
    z-index: 10;
 }
-#wb_Picture3
-{
-   display: block;
-   width: 100%;
-   height: auto;
-   z-index: 12;
-}
 #wb_Picture1
 {
    display: block;
@@ -934,12 +761,12 @@ body
    height: auto;
    z-index: 0;
 }
-#wb_ImageHotspots4
+#wb_ImageHotspots5
 {
    display: inline-block;
    width: 100%;
    height: auto;
-   z-index: 16;
+   z-index: 14;
 }
 #wb_FontAwesomeIcon9
 {
@@ -956,10 +783,6 @@ body
    height: 22px;
    text-align: center;
    z-index: 8;
-}
-#Blog3
-{
-   overflow: hidden;
 }
 #wb_ImageHotspots1
 {
@@ -988,7 +811,7 @@ body
    display: inline-block;
    width: 100%;
    height: auto;
-   z-index: 14;
+   z-index: 13;
 }
 #wb_Heading1
 {
@@ -1009,7 +832,7 @@ body
    display: inline-block;
    width: 100%;
    height: auto;
-   z-index: 13;
+   z-index: 12;
 }
 @media only screen and (min-width: 1280px)
 {
@@ -1056,6 +879,8 @@ body
 {
    visibility: visible;
    display: table;
+   background-color: #006400;
+   background-image: none;
    border: 0px solid #006400;
 }
 #wb_PageHeader
@@ -1210,19 +1035,6 @@ body
    margin: 0;
    padding: 0;
 }
-#Blog3
-{
-   visibility: visible;
-   display: block;
-}
-#Blog3 .blogcolumn
-{
-   width: 100%;
-}
-#Blog3 .visible-col1
-{
-   display: block;
-}
 #wb_LayoutGrid9
 {
    visibility: visible;
@@ -1368,14 +1180,6 @@ body
 #Label4
 {
    line-height: 16px;
-}
-#wb_ImageHotspots4
-{
-   width: 100%;
-   visibility: visible;
-   display: block;
-   margin: 0;
-   padding: 0;
 }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1279px)
@@ -1423,6 +1227,8 @@ body
 {
    visibility: visible;
    display: table;
+   background-color: #006400;
+   background-image: none;
    border: 0px solid #CCCCCC;
 }
 #wb_PageHeader
@@ -1577,19 +1383,6 @@ body
    margin: 0;
    padding: 0;
 }
-#Blog3
-{
-   visibility: visible;
-   display: block;
-}
-#Blog3 .blogcolumn
-{
-   width: 100%;
-}
-#Blog3 .visible-col1
-{
-   display: block;
-}
 #wb_LayoutGrid9
 {
    visibility: visible;
@@ -1735,14 +1528,6 @@ body
 #Label4
 {
    line-height: 16px;
-}
-#wb_ImageHotspots4
-{
-   width: 100%;
-   visibility: visible;
-   display: block;
-   margin: 0;
-   padding: 0;
 }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px)
@@ -1790,6 +1575,8 @@ body
 {
    visibility: visible;
    display: table;
+   background-color: #006400;
+   background-image: none;
    border: 0px solid #CCCCCC;
 }
 #wb_PageHeader
@@ -1944,19 +1731,6 @@ body
    margin: 0;
    padding: 0;
 }
-#Blog3
-{
-   visibility: visible;
-   display: block;
-}
-#Blog3 .blogcolumn
-{
-   width: 100%;
-}
-#Blog3 .visible-col1
-{
-   display: block;
-}
 #wb_LayoutGrid9
 {
    visibility: visible;
@@ -2103,7 +1877,7 @@ body
 {
    line-height: 16px;
 }
-#wb_ImageHotspots4
+#wb_ImageHotspots5
 {
    width: 100%;
    visibility: visible;
@@ -2157,6 +1931,8 @@ body
 {
    visibility: visible;
    display: table;
+   background-color: #006400;
+   background-image: none;
    border: 0px solid #CCCCCC;
 }
 #wb_PageHeader
@@ -2311,19 +2087,6 @@ body
    margin: 0;
    padding: 0;
 }
-#Blog3
-{
-   visibility: visible;
-   display: block;
-}
-#Blog3 .blogcolumn
-{
-   width: 100%;
-}
-#Blog3 .visible-col1
-{
-   display: block;
-}
 #wb_LayoutGrid9
 {
    visibility: visible;
@@ -2470,7 +2233,7 @@ body
 {
    line-height: 16px;
 }
-#wb_ImageHotspots4
+#wb_ImageHotspots5
 {
    width: 100%;
    visibility: visible;
@@ -2524,6 +2287,8 @@ body
 {
    visibility: visible;
    display: table;
+   background-color: #006400;
+   background-image: none;
    border: 0px solid #CCCCCC;
 }
 #wb_PageHeader
@@ -2678,19 +2443,6 @@ body
    margin: 0;
    padding: 0;
 }
-#Blog3
-{
-   visibility: visible;
-   display: block;
-}
-#Blog3 .blogcolumn
-{
-   width: 100%;
-}
-#Blog3 .visible-col1
-{
-   display: block;
-}
 #wb_LayoutGrid9
 {
    visibility: visible;
@@ -2837,7 +2589,7 @@ body
 {
    line-height: 16px;
 }
-#wb_ImageHotspots4
+#wb_ImageHotspots5
 {
    width: 100%;
    visibility: visible;
