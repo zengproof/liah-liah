@@ -83,10 +83,7 @@ body
 #wb_PageHeader
 {
    clear: both;
-   position: fixed;
-   left: 0;
-   top: 0;
-   z-index: 7777;
+   position: relative;
    table-layout: fixed;
    display: table;
    text-align: center;
@@ -731,7 +728,7 @@ body
    display: block;
    width: 100%;
    height: auto;
-   max-width: 758px;
+   max-width: 4000px;
    margin-left: auto;
    margin-right: auto;
    vertical-align: top;
